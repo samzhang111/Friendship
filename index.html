@@ -1,0 +1,13 @@
+---
+title: home
+layout: standard
+---
+  {% for post in site.posts %}
+  <div class="panel panel-default" style="padding: 6px">
+    {{ post.content }}
+
+    <p>
+      &mdash;{{ post.author }} ({{post.date | date: '%B %d, %Y'}})
+    </p>
+  </div>
+  {% endfor %}
